@@ -1,0 +1,21 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { Grid, Button } from "@mui/material";
+
+export const Nav = () => {
+  return (
+    <div>
+      <Grid container spacing={3}>
+        <Grid item xs={2}>
+          <Link to="/home">Home</Link>
+        </Grid>
+        <Grid item xs={2}>
+          <Link to="/cust">Customer</Link>
+        </Grid>
+        <Grid item xs={2}>
+          <Link to="/support">Support</Link>
+        </Grid>
+      </Grid>
+    </div>
+  );
+};
