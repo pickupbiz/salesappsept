@@ -5,6 +5,7 @@ import { Nav } from "./components/Nav";
 import { Greet } from "./components/Greet";
 import { CustomerList } from "./components/CustomerList";
 import { UserList } from "./components/UserList";
+import { ProductList } from "./components/ProductList";
 import "./components/common.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
+          <Route path="/product" element={<ProductList />} />
           <Route path="/greet" element={<Greet />} />
           <Route path="/cust" element={<CustomerList />} />
           <Route path="/home" element={<Home />} />

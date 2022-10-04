@@ -19,6 +19,9 @@ export const Nav = () => {
           <Link to="/users">Users</Link>
         </Grid>
         <Grid item xs={1}>
+          <Link to="/product">Product</Link>
+        </Grid>
+        <Grid item xs={1}>
           <Link to="/support">Support</Link>
         </Grid>
       </Grid>
