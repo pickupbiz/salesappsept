@@ -4,7 +4,7 @@ import { Grid, Button } from "@mui/material";
 
 export const Nav = () => {
   return (
-    <div>
+    <div className="sub">
       <Grid container spacing={3}>
         <Grid item xs={1}>
           <Link to="/home">Home</Link>
