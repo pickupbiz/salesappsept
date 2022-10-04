@@ -9,6 +9,7 @@ export const ProductList = () => {
   const [catData, setCatData] = useState([]);
   const [txt, setTxt] = useState("");
   const [cat, setCat] = useState("");
+  const [rate, setRate] = useState(0);
 
   const getData = async () => {
     const result = await axios.get("https://fakestoreapi.com/products");
@@ -36,6 +37,13 @@ export const ProductList = () => {
   }, [cat]);
 
   useEffect(() => {
+    const filtered = data.filter(
+      (item) => Math.round(item.rating.rate) >= rate
+    );
+    setFiltData(filtered);
+  }, [rate]);
+
+  useEffect(() => {
     getData();
   }, []);
   return (
@@ -51,7 +59,12 @@ export const ProductList = () => {
           />
         </Grid>
         <Grid item xs={4}>
-          <Rating name="rateit" value={3} fullWidth />
+          <Rating
+            name="rateit"
+            value={rate}
+            onChange={(e, val) => setRate(val)}
+            fullWidth
+          />
         </Grid>
         {catData.map((item) => (
           <Grid item xs={3}>
