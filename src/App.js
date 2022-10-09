@@ -6,6 +6,8 @@ import { Greet } from "./components/Greet";
 import { CustomerList } from "./components/CustomerList";
 import { UserList } from "./components/UserList";
 import { ProductList } from "./components/ProductList";
+import { AllUserList } from "./components/AllUserList";
+import { DeviceList } from "./components/DeviceList";
 import "./components/common.css";
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/greet" element={<Greet />} />
           <Route path="/cust" element={<CustomerList />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/alluser" element={<AllUserList />} />
+          <Route path="/devices" element={<DeviceList />} />
           <Route path="/help" element={<Support />} />
           <Route path="/support" element={<Support />} />
         </Routes>

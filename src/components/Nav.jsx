@@ -19,6 +19,12 @@ export const Nav = () => {
           <Link to="/users">Users</Link>
         </Grid>
         <Grid item xs={1}>
+          <Link to="/alluser">All User</Link>
+        </Grid>
+        <Grid item xs={1}>
+          <Link to="/devices">Devices</Link>
+        </Grid>
+        <Grid item xs={1}>
           <Link to="/product">Product</Link>
         </Grid>
         <Grid item xs={1}>
