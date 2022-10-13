@@ -8,6 +8,8 @@ import { UserList } from "./components/UserList";
 import { ProductList } from "./components/ProductList";
 import { AllUserList } from "./components/AllUserList";
 import { DeviceList } from "./components/DeviceList";
+import { StudentList } from "./components/StudentList";
+import { EmpList } from "./components/EmpList";
 import "./components/common.css";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
+          <Route path="/emp" element={<EmpList />} />
+          <Route path="/students" element={<StudentList />} />
           <Route path="/product" element={<ProductList />} />
           <Route path="/greet" element={<Greet />} />
           <Route path="/cust" element={<CustomerList />} />
